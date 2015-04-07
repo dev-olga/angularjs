@@ -1,0 +1,25 @@
+<div>
+    <div class="tab-content">
+        <tabset>
+            <tab
+                    ng-repeat="t in tabs"
+                    heading="{{t.heading}}"
+                    ui-sref="{{t.route}}"
+                    active="t.active">
+            </tab>
+        </tabset>
+
+        <div ui-view></div>
+    </div>
+
+    <div class="slider-content">
+        <div class="new-team">
+            <input type="text" ng-model="newTeamName"/>
+            <input type="button" ng-click="">
+        </div>
+
+        <div>{{team.name}}</div>
+    </div>
+
+    <div class="clear"></div>
+</div>

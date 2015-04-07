@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html ng-app="app">
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Teams manager</title>
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles/common.css">
+    <link rel="stylesheet" href="app/main/styles/main.css">
+
+</head>
+<body ng-cloak>
+
+<div>
+
+    <div ui-view></div>
+
+</div>
+
+<!-- JavaScript vendor files -->
+<script src="../vendor/angular/angular.js"></script>
+<script src="../vendor/angular-ui-router/angular-ui-router.js"></script>
+<script src="../vendor/angular-ui-bootstrap/ui-bootstrap-tpls-0.11.0.js"></script>
+
+<!-- JavaScript application files -->
+<script src="app/app.js"></script>
+<script src="app/main/main.js"></script>
+<script src="app/main/helpers.js"></script>
+<!-- Services -->
+<script src="app/main/services/teamsService.js"></script>
+<script src="app/main/services/searchService.js"></script>
+<!--Controllers-->
+<script src="app/main/controllers/infoCtrl.js"></script>
+<script src="app/main/controllers/searchCtrl.js"></script>
+<script src="app/main/controllers/tabsCtrl.js"></script>
+<script src="app/main/controllers/teamsCtrl.js"></script>
+<!--Directives-->
+<script src="app/main/directives/memberTitle/member-title.js"></script>
+<script src="app/main/directives/postRender/post-render.js"></script>
+<script src="app/main/directives/tag/tag.js"></script>
+<script src="app/main/directives/thSort/th-sort.js"></script>
+<!--Filters-->
+<script src="app/main/filters/interval.js"></script>
+</body>
+</html>
